@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Módulo 1 - Desbravando o HTML</title>
+  <style>
+    h3 {
+      color: gray;
+      font: Arial;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="inicio">Introdução ao HTML - Primeiros Passos</h1>
+  <hr />
+  <h2>Índice</h2>
+  <h4>Primeiros passos para navegar no HTML:</h4>
+  <ul>
+    <li><a href="#sobre-html">O que é HTML?</a></li>
+    <li><a href="#como-funciona">Como o HTML funciona?</a></li>
+    <li><a href="#tags-basicas">Tags básicas do HTML</a></li>
+    <li><a href="#tags-de-textos-html">Tags de texto em HTML</a></li>
+    <li><a href="#tags-auto-fechaveis">Tags de fechamento automático</a></li>
+    <li><a href="acessibilidade">Acessibilidade em HTML</a></li>
+    <li><a href="#links-estudar">Links para Estudo</a></li>
+  </ul>
+
+  <h2 id="sobre-html">O que é HTML?</h2>
+  <small><a href="#inicio">(Voltar)</a></small>
+  <p>HTML, ou HyperText Markup Language, é uma linguagem de marcação usada para estruturar páginas na web. Podemos dizer que o HTML é a estrutura do site.</p>
+  <fieldset>
+    <legend>Metaforando</legend>
+    <blockquote><strong>Para entender melhor, imagine o HTML como um esqueleto: ele dá forma e sustentação à página, assim como o esqueleto é a base do corpo humano.</strong></blockquote>
+  </fieldset>
+  <h2 id="como-funciona">Como o HTML funciona?</h2>
+  <small><a href="#inicio">(Voltar)</a></small>
+  <p>O HTML funciona através de tags, que são como etiquetas que informam ao navegador qual tipo de conteúdo está sendo exibido. Cada tag tem uma função específica, como mostrar um título, um parágravo, uma imagem ou um link. Essas tags costumam vim em pares: uma de abertura < > e uma de fechamento < / >, enquanto o conteúdo que será exibido fica entre elas. As tags também podem ter <u>atributos</u>, que são informações extras que modificam ou definem o comportamento daquele elemento.</p>
+  <fieldset>
+    <legend>Metaforando</legend>
+    <blockquote><strong>Você pode imaginar as tags como caixinhas rotuladas. Cada uma tem um nome que define o que ela guarda (texto, imagem, link...) Os atributos seriam os adesivos colados na caixa, dando mais detalhe sobre o conteúdo.</p></strong><i><mark><hr />Mas lembre-se de que há excessões, existem algumas tags que se fecham sozinhas.</mark></i></blockquote>
+  </fieldset>
+  <h2 id="tags-basicas">Tags básicas do HTML</h2>
+  <small><a href="#inicio">(Voltar)</a></small>
+  <h4>Elementos principais da estrutura do HTML:</h4>
+  <ol>
+    <li>< html ></li>
+    <li>< head ></li>
+    <li>< body ></li>
+  </ol>
+  <p>Antes de começarmos a colocar o conteúdo do nosso documento, precisamos inserir a tag < html > < /html >. Dentro da tag < html >, colocamos outras duas tags: < head > < /head > e < body > < /body >. A tag < head > contém informações que não serão exibidas diretamente no conteúdo principal, mas são importantes para o navegador. Dentro dela também colocamos a tag < title > < /title > que define o título da página, ele é exibido na aba do navegador. A tag < body > é o que define o corpo do nosso documento HTML, é nessa tag que inserimos os elementos que serão vistos pelo usuário, como textos, imagens, etc.</p>
+  <fieldset>
+    <legend><mark><strong>Importante!</strong></mark></legend>
+    <blockquote><strong>Temos também a declaração < !DOCTYPE html > que precisa ser inserida no começo do documento HTML, essa declaração informa ao navegador a versão do HTML utilizada na página - isso é muito importante para garantir que a página seja exibida de forma correta.</strong></blockquote>
+  </fieldset>
+  <h2 id="tags-de-textos-html">Tags de texto em HTML</h2>
+  <small><a href="#inicio">(Voltar)</a></small>
+  <p>As tags de texto definem como o navegador irá exibir as informações de texto para o usuário. Elas são usadas para estruturar e formatar o conteúdo textual da página.</p>
+  <h3>Exemplos:</h3>
+  <ul>
+    <li>Tag h1-h6 - define o tamanho do título</li>
+    <li>Tag p - define o parágrafo de um texto</li>
+    <li>Tag blockquote - essa tag serve para inserir uma citação longa</li>
+    <li>Tag u - adiciona o underline em um texto</li>
+    <li>Tag mark - destaca um trecho do texto</li>
+    <li>Tag sup - deixa o texto sobrescrito | Exemplo:<sup>sup</sup></li>
+    <li>Tag sub - deixa o texto subscrito | Exemplo:<sub>sub</sub></li>
+    <li>Tag i - deixa o texto em itálico</li>
+    <li>Tag strong - deixa o texto em negrito</li>
+  </ul>
+  <h2 id="tags-auto-fechaveis">Tags de fechamento automático</h2>
+  <small><a href="#inicio">(Voltar)</a></small>
+  <p>As tags que são consideradas auto fecháveis (que não posssuem tag de fechamento), não precisam da tag de fechamento porque elas não tem conteúdo entre tags de abertura e fechamento. Elas definem elementos que são sozinhos e não precisam de conteúdo adicional dentro delas.</p>
+  <h3>Exemplos:</h3>
+  <ul>
+    <li>< img /> - Usada para exibir imagens</li>
+    <li>< input /> - Usada para criar campos de entrada de dados</li>
+    <li>< br /> - Usada para inserir uma quebra de linha</li>
+  </ul>
+  <h2 id="acessibilidade">Acessibilidade em HTML</h2>
+  <small><a href="#inicio">(Voltar)</a></small>
+  <p>A acessibilidade em HTML é de grande importância para garantir que todas as pessoas tenham acesso às informações acessadas nos sites e aplicações web. É necessário implementar boas práticas de desenvolvimento para tornar o conteúdo fácil de ser acessado e entendido, principalmente por pessoas com deficiência. Inclusive, essas práticas melhoram a usabilidade para todos! </p>
+  <h3>Exemplos:</h3>
+  <ul>
+    <li>alt (texto alternativo) - utilizando o atributo alt em imagens, por exemplo, você fornece descrições precisas para as imagens - esse recurso é muito útil para quem não consegue vê-las</li>
+    <li>< header >, < nav >, < article >, < footer > - utilizar tags como essas, facilita para os leitores de tela a entenderem a estrutura da página</li>
+  </ul>
+  <h2>Links para Estudo</h2>
+  <small><a href="#inicio">(Voltar)</a></small>
+  <h4>Conhecimento nunca é demais! Aprenda mais:</h4>
+  <nav>
+  <ul>
+    <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a></li>
+    <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+    <li><a href="https://www.w3.org/" target="_blank">W3C</a></li>
+  </ul>
+  </nav>
+</body>
+</html>
